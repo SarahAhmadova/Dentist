@@ -178,32 +178,36 @@ html body #nav-menu ul li a {
   font-weight: 600 !important;
 }
 
-html body #carouselSlides img {
+html body #carouselExampleControls a {
+  width: 4%;
+}
+
+html body #carouselExampleControls img {
   width: 100%;
 }
 
-html body #carouselSlides .carousel-caption {
+html body #carouselExampleControls .carousel-caption {
   bottom: 22%;
   text-align: unset;
 }
 
-html body #carouselSlides .carousel-caption.left {
+html body #carouselExampleControls .carousel-caption.left {
   right: unset;
   left: 5%;
 }
 
-html body #carouselSlides .carousel-caption.right {
+html body #carouselExampleControls .carousel-caption.right {
   left: unset;
   right: 5%;
 }
 
-html body #carouselSlides .carousel-caption h1 {
+html body #carouselExampleControls .carousel-caption h1 {
   color: #00587a;
   font-size: 3rem;
   font-weight: 700;
 }
 
-html body #carouselSlides .carousel-caption h1 span {
+html body #carouselExampleControls .carousel-caption h1 span {
   color: #54ced4;
 }
 /*# sourceMappingURL=style.css.map */
