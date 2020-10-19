@@ -1,0 +1,202 @@
+@import "_color";
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        padding: 0;
+        margin: 0;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+            background-color: $bgclr2;
+            ;
+            display: flex;
+            justify-content: space-between;
+            color: $color2;
+
+            .left-header {
+                display: inline-block;
+
+                a {
+                    color: $color2;
+                    margin-right: 15px;
+
+                    .bullet {
+                        color: $color4;
+                    }
+                }
+
+                a:hover {
+                    color: $color3;
+                    text-decoration: none;
+
+                    .bullet {
+                        color: $color3;
+                    }
+                }
+            }
+
+            .right-header {
+                display: flex;
+
+                i {
+                    color: $color3;
+                }
+
+                .sociallinks {
+                    display: flex;
+                    margin: 0;
+
+                    li {
+                        margin: 0 7px;
+                    }
+                }
+            }
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .bottom-header {
+            background-color: #a8a9ad;
+
+            a {
+                color: $color1;
+
+            }
+
+            .brand {
+                margin: 0;
+                padding: 0;
+
+                p {
+                    margin: 0;
+                    color: #008891;
+
+                }
+            }
+
+            .header-contact-info ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+
+                &>:nth-child(1) {
+                    border-right: 1px solid $color2;
+                }
+
+                .single-item {
+                    margin: 0 10px;
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .icon {
+                        height: 60px;
+                        width: 60px;
+                    }
+
+                    color: $color1;
+
+                    .text {
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            .icon {
+                height: 70px;
+                width: 70px;
+            }
+
+            .btn a {
+                // background-color: #fff;
+                border-radius: 30px;
+                padding: 12PX 45px;
+                border: 2px solid rgba(255, 255, 255, 0.319);
+                font-size: 15px;
+                font-weight: 600;
+
+                i {
+                    color: $color3;
+                    font-size: 20px;
+                    margin-right: 7px;
+
+                }
+
+                &:hover {
+                    border-color: $color3;
+                    background-color: $color3;
+                    color: white;
+
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        #nav-menu {
+            background-color: $bgclr1;
+
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 20px 0;
+                    // border-right: 1px solid $color1;
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        border-right: 0.5px solid #ffffff63;
+                        border-left: 0.5px solid #ffffff63;
+                        color: white !important;
+                        font-weight: 600!important;
+                    }
+                }
+            }
+
+        }
+        #carouselSlides{
+            img{
+                width: 100%;
+            }
+            .carousel-caption{
+                bottom: 22%;
+                text-align: unset;
+                &.left{
+                    right: unset;
+                    left: 5%;
+                }
+                &.right{
+                    left: unset;
+                    right: 5%;
+                }
+                h1{
+                    color: $color1;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    span{
+                        color: #54ced4;
+                    }
+                }
+            }
+        }
+
+    }
+}
