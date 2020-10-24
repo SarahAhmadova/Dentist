@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 html body {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -13,9 +17,27 @@ html body ul {
   padding: 0;
 }
 
+html body a:hover {
+  text-decoration: none;
+}
+
+html body .mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+
+html body .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
 html body header {
   padding: 20px;
-  background-color: #091d36;
+  background-color: #104099;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,12 +61,12 @@ html body header .left-header a .bullet {
 }
 
 html body header .left-header a:hover {
-  color: #4ccdff;
+  color: white;
   text-decoration: none;
 }
 
 html body header .left-header a:hover .bullet {
-  color: #4ccdff;
+  color: rgba(255, 255, 255, 0.523);
 }
 
 html body header .right-header {
@@ -61,7 +83,7 @@ html body .sociallinks {
 }
 
 html body .sociallinks i {
-  color: #4ccdff;
+  color: #03b08a;
 }
 
 html body .sociallinks li {
@@ -80,10 +102,11 @@ html body .sociallinks li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 50%;
 }
 
-html body a:hover {
-  text-decoration: none;
+html body .sociallinks li a:hover {
+  background-color: white;
 }
 
 html body .bottom-header {
@@ -91,7 +114,13 @@ html body .bottom-header {
 }
 
 html body .bottom-header a {
-  color: #00587a;
+  color: #104099;
+  -webkit-transition: ease-in-out background-color 1s;
+  transition: ease-in-out background-color 1s;
+}
+
+html body .bottom-header a:hover {
+  color: white;
 }
 
 html body .bottom-header .brand {
@@ -101,7 +130,6 @@ html body .bottom-header .brand {
 
 html body .bottom-header .brand p {
   margin: 0;
-  color: #008891;
 }
 
 html body .bottom-header .header-contact-info ul {
@@ -124,7 +152,7 @@ html body .bottom-header .header-contact-info ul .single-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #00587a;
+  color: #104099;
 }
 
 html body .bottom-header .header-contact-info ul .single-item p {
@@ -158,14 +186,15 @@ html body .bottom-header .btn a {
 }
 
 html body .bottom-header .btn a i {
-  color: #4ccdff;
+  color: #104099;
   font-size: 20px;
   margin-right: 7px;
 }
 
 html body .bottom-header .btn a:hover {
-  border-color: #4ccdff;
-  background-color: #4ccdff;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(51%, #104099), to(#00af89));
+  background-image: linear-gradient(to right, #104099 51%, #00af89 100%);
   color: white;
 }
 
@@ -174,7 +203,7 @@ html body .bottom-header .btn a:hover i {
 }
 
 html body #nav-menu {
-  background-color: #1d97bb;
+  background-color: #03b08a;
 }
 
 html body #nav-menu ul li {
@@ -183,7 +212,7 @@ html body #nav-menu ul li {
 }
 
 html body #nav-menu ul li:hover a {
-  color: #091d36 !important;
+  color: #104099 !important;
 }
 
 html body #nav-menu ul li a {
@@ -196,37 +225,50 @@ html body #nav-menu ul li a {
   font-weight: 600 !important;
 }
 
-html body #carouselExampleControls a {
+html body #carouselExampleIndicators [data-target="#carouselExampleIndicators"] {
+  background-color: #104099;
+  border-radius: 20px;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  margin-left: 3px;
+}
+
+html body #carouselExampleIndicators [data-target="#carouselExampleIndicators"].active {
+  background-color: white;
+}
+
+html body #carouselExampleIndicators a {
   width: 4%;
 }
 
-html body #carouselExampleControls img {
+html body #carouselExampleIndicators img {
   width: 100%;
 }
 
-html body #carouselExampleControls .carousel-caption {
+html body #carouselExampleIndicators .carousel-caption {
   bottom: 22%;
   text-align: unset;
 }
 
-html body #carouselExampleControls .carousel-caption.left {
+html body #carouselExampleIndicators .carousel-caption.left {
   right: unset;
   left: 5%;
 }
 
-html body #carouselExampleControls .carousel-caption.right {
+html body #carouselExampleIndicators .carousel-caption.right {
   left: unset;
   right: 5%;
 }
 
-html body #carouselExampleControls .carousel-caption h1 {
-  color: #00587a;
+html body #carouselExampleIndicators .carousel-caption h1 {
+  color: #104099;
   font-size: 3rem;
   font-weight: 700;
 }
 
-html body #carouselExampleControls .carousel-caption h1 span {
-  color: #54ced4;
+html body #carouselExampleIndicators .carousel-caption h1 span {
+  color: #03b08a;
 }
 
 html body .services .serv-item {
@@ -241,7 +283,7 @@ html body .services .serv-item .icon img {
 }
 
 html body .services .serv-item .icon img.blue {
-  border: 1.5px solid #1d97bb;
+  border: 1.5px solid #03b08a;
 }
 
 html body .services .serv-item .icon img.cyan {
@@ -263,7 +305,7 @@ html body .services .btn:hover {
 }
 
 html body .service {
-  background-color: #b9eaf0;
+  background-color: #e1e8f0;
 }
 
 html body .service .heading {
@@ -272,11 +314,11 @@ html body .service .heading {
 
 html body .service .heading h1 {
   font-weight: 700;
-  color: #00587a;
+  color: #104099;
 }
 
 html body .service .heading h3 {
-  color: white;
+  color: #03b08a;
 }
 
 html body .service .serv-item {
@@ -349,19 +391,40 @@ html body .service .serv-item .img:hover {
 
 html body .service .serv-item .img:hover h6 {
   color: white;
-  background-color: #54ced4;
-  border: 1px solid white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #1a56afd1;
+}
+
+html body #map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 
 html body footer {
-  background-color: #184152;
+  background-color: #104099;
   color: white;
+}
+
+html body footer h6 {
+  font-weight: 700;
+}
+
+html body footer a {
+  color: white;
+}
+
+html body footer a:hover {
+  color: #03b08a;
+  -webkit-transition: linear .5s color;
+  transition: linear .5s color;
 }
 
 html body footer .sociallinks a {
   border-radius: 50%;
   border: 1px solid white;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

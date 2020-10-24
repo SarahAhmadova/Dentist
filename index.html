@@ -8,8 +8,11 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/4643ad54ed.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+        defer></script>
     <title>Mərkəzi Stomatologiya</title>
     <link rel="shortcut icon" href="img/dento.jpg" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -21,10 +24,9 @@
         <div class="right-header">
             <span><i class="far fa-clock"></i> Bazar ertəsi - Şənbə: 09:00 to 20:00, Bazar: Bağlı.</span>
             <ul class="sociallinks ml-2">
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
         </div>
     </header>
@@ -110,7 +112,12 @@
         </div>
     </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="img/slayd-1.jpg" alt="...">
@@ -210,80 +217,89 @@
         </div>
     </section> -->
     <section class="service pt-5 pb-5">
-       <div class="container">
-        <div class="heading mb-5">
-            <h3> - Xidmətlərimiz -</h3>
-            <h1>İcra etdiyimiz prosedurlar</h1>
+        <div class="container">
+            <div class="heading mb-5">
+                <h3> - Xidmətlərimiz -</h3>
+                <h1>İcra etdiyimiz prosedurlar</h1>
+            </div>
+            <div class="row serv-item">
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv1">
+                            <h6>Dental İmplantologiya</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv2">
+                            <h6>Paradontologiya</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv3">
+                            <h6>Estetik stomatologiya</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv4">
+                            <h6>Çənə cərrahiyyəsi/ Oral cərrahiyyə</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv5">
+                            <h6>Ağıl dişi cərrahiyyəsi</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv6">
+                            <h6>Estetik və bərpaedici diş əti cərrahiyyəsi</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv7">
+                            <h6>Dental Travmatologiya</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv8">
+                            <h6>Dişlərin autotransplantasiyası</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <a href="#services.html">
+                        <div class="img serv9">
+                            <h6>Endotontik cəhrahiyyə</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="row serv-item">
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv1">
-                        <h6>Dental İmplantologiya</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv2">
-                        <h6>Paradontologiya</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv3">
-                        <h6>Estetik stomatologiya</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv4">
-                        <h6>Çənə cərrahiyyəsi/ Oral cərrahiyyə</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv5">
-                        <h6>Ağıl dişi cərrahiyyəsi</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv6">
-                        <h6>Estetik və bərpaedici diş əti cərrahiyyəsi</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv7">
-                        <h6>Dental Travmatologiya</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv8">
-                        <h6>Dişlərin autotransplantasiyası</h6>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-12">
-                <a href="#services.html">
-                    <div class="img serv9">
-                        <h6>Endotontik cəhrahiyyə</h6>
-                    </div>
-                </a>
-            </div>
-        </div>
-       </div>
     </section>
     <section class="map">
 
+    </section>
+
+    <section class="map">
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=40.591441%2C%2049.675397&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://www.embedgooglemap.net"></a></div>
+        </div>
     </section>
     <footer>
         <div class="container">
@@ -291,26 +307,49 @@
                 <div class="col-md-4 p-4">
                     <h6>Xidmətlər</h6>
                     <ul>
-                        <li>Cərrahi xidmətlər</li>
-                        <li>Ümumi stomatoloji xidmətlər</li>
-                        <li>Xüsusi stomatoloji xidmətlər</li>
-                        <li>Oral xidmətlər/ Cərrahi xidmətlər</li>
+                        <li><a href="">
+                            Oral xidmətlər/ Cərrahi xidmətlər
+                        </a></li>
+                        <li><a href="">
+                            Ümumi stomatoloji xidmətlər
+                        </a></li>
+                        <li><a href="">
+                            Estetik stomatoloji xidmətlər
+                        </a></li>
+                        <li><a href="">
+                            Oral xidmətlər/ Cərrahi xidmətlər
+                        </a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 pb-4 pt-4">
                     <h6>Saytın xəritəsi</h6>
+                    <ul>
+                        <li>
+                            <a href="index.html">Əsas səhifə</a>
+                        </li>
+                        <li>
+                            <a href="">Xidmətlər</a>
+                        </li>
+                        <li>
+                            <a href="">Həkimlər</a>
+                        </li>
+                        <li>
+                            <a href="">Qalereya</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-md-4 pb-4 pt-4">
                     <h6>Əlaqə</h6>
                     <ul>
                         <li>Ünvan: Sumqayıt şəh., Sülh küçəsi</li>
                         <li>Telofon: +9942930224</li>
-                        <li><ul class="sociallinks mt-3">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul></li>
+                        <li>
+                            <ul class="sociallinks mt-3">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </li>
                         <li></li>
                     </ul>
                 </div>
