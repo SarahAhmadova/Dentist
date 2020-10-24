@@ -375,12 +375,14 @@ html {
                         border-radius: 20px;
                         background-color: white;
                         padding: 10px 20px;
+                        transition: 1s;
                     }
 
                     &:hover {
                         background-size: 110%;
 
                         h6 {
+                            bottom: 25%;
                             color: white;
                             box-sizing: border-box;
                             background-color: #1a56afd1;

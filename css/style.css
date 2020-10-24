@@ -383,6 +383,8 @@ html body .service .serv-item .img h6 {
   border-radius: 20px;
   background-color: white;
   padding: 10px 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 html body .service .serv-item .img:hover {
@@ -390,6 +392,7 @@ html body .service .serv-item .img:hover {
 }
 
 html body .service .serv-item .img:hover h6 {
+  bottom: 25%;
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
