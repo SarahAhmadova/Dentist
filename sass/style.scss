@@ -46,21 +46,26 @@ html {
             .right-header {
                 display: flex;
 
-                i {
-                    color: $color3;
-                }
-
-                .sociallinks {
+                
+            }
+        }
+        .sociallinks {
+            display: flex;
+            margin: 0;
+            i {
+                color: $color3;
+            }
+            li {
+                margin-right: 7px;
+                a{
+                    width: 30px;
                     display: flex;
-                    margin: 0;
-
-                    li {
-                        margin: 0 7px;
-                    }
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
-
         a:hover {
             text-decoration: none;
         }
@@ -158,7 +163,17 @@ html {
                 li {
                     display: inline-block;
                     padding: 20px 0;
-                    // border-right: 1px solid $color1;
+
+                    &:hover {
+
+                        // background-color:$color3;
+                        a {
+                            color: $bgclr2 !important;
+                        }
+
+
+                    }
+
                     a {
                         display: inline-block;
                         width: 100%;
@@ -166,40 +181,162 @@ html {
                         border-right: 0.5px solid #ffffff63;
                         border-left: 0.5px solid #ffffff63;
                         color: white !important;
-                        font-weight: 600!important;
+                        font-weight: 600 !important;
                     }
                 }
             }
 
         }
-        #carouselExampleControls{
-            a{
+
+        #carouselExampleControls {
+            a {
                 width: 4%;
             }
-            img{
+
+            img {
                 width: 100%;
             }
-            .carousel-caption{
+
+            .carousel-caption {
                 bottom: 22%;
                 text-align: unset;
-                &.left{
+
+                &.left {
                     right: unset;
                     left: 5%;
                 }
-                &.right{
+
+                &.right {
                     left: unset;
                     right: 5%;
                 }
-                h1{
+
+                h1 {
                     color: $color1;
                     font-size: 3rem;
                     font-weight: 700;
-                    span{
-                        color: #54ced4;
+
+                    span {
+                        color: $color5;
                     }
                 }
             }
         }
 
+        .services {
+            .serv-item {
+                padding-top: 15px;
+
+                .icon {
+
+                    img {
+                        float: right;
+                        width: 90%;
+                        padding: 15%;
+                        border-radius: 50%;
+
+                        &.blue {
+                            border: 1.5px solid $bgclr1;
+                        }
+
+                        &.cyan {
+                            border: 1.5px solid $color5;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                // background-color: #fff;
+                border-radius: 30px;
+                padding: 12PX 45px;
+                border: 2px solid rgba(255, 255, 255, 0.319);
+                font-size: 15px;
+                font-weight: 600;
+                &:hover {
+                    border-color: $color5;
+                    background-color: $color5;
+                    color: white;
+
+                }
+            }
+        }
+        .service{
+            background-color: rgb(154, 221, 231);
+            .heading{
+                // display: flex;
+                // justify-content: center;
+                // flex-direction: column;
+                text-align: center;
+                h1{
+                    font-weight: 700;
+                    color: $color1;
+                }
+                h3{
+                    color: white;
+
+                }
+            }
+            .serv-item{
+                text-align: center;
+                .img{
+                    margin-bottom: 20px;
+                    height: 200px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(231, 229, 230);
+                    border-radius: 20px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &.serv1{
+                        background-image: url("../img/services/Implantology.jpg");
+                    }
+                    &.serv2{
+                        background-image: url("../img/services/Paradont.jpg");
+                    }
+                    &.serv3{
+                        background-image: url("../img/services/estetic.jpg");
+                    }
+                    &.serv4{
+                        background-image: url("../img/services/oral-surgery.jpg");
+                    }
+                    &.serv5{
+                        background-image: url("../img/services/wisdom.jpg");
+                    }
+                    &.serv6{
+                        background-image: url("../img/services/estetic.jpg");
+                    }
+                    &.serv7{
+                        background-image: url("../img/services/estetic.jpg");
+                    }
+                    &.serv8{
+                        background-image: url("../img/services/estetic.jpg");
+                    }
+                    &.serv9{
+                        background-image: url("../img/services/estetic.jpg");
+                    }
+                    
+                    h6{
+                        position: absolute;
+                        bottom: -8%;
+                        border-radius: 20px;
+                        background-color: white;
+                        padding: 10px 20px;
+                    }
+                }
+
+            }
+        }
+        footer{
+            background-color: #184152;
+            color: white;
+            .sociallinks {
+                a{
+                    border-radius: 50%;
+                    border: 1px solid white;
+                }
+            }
+        }
     }
 }
