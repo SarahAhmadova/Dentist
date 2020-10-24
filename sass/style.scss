@@ -247,7 +247,6 @@ html {
             }
 
             .btn {
-                // background-color: #fff;
                 border-radius: 30px;
                 padding: 12PX 45px;
                 border: 2px solid rgba(255, 255, 255, 0.319);
@@ -262,11 +261,8 @@ html {
             }
         }
         .service{
-            background-color: rgb(154, 221, 231);
+            background-color: rgb(185, 234, 240);
             .heading{
-                // display: flex;
-                // justify-content: center;
-                // flex-direction: column;
                 text-align: center;
                 h1{
                     font-weight: 700;
@@ -305,16 +301,16 @@ html {
                         background-image: url("../img/services/wisdom.jpg");
                     }
                     &.serv6{
-                        background-image: url("../img/services/estetic.jpg");
+                        background-image: url("../img/services/reconstruct.png");
                     }
                     &.serv7{
-                        background-image: url("../img/services/estetic.jpg");
+                        background-image: url("../img/services/dental-trauma.jpg");
                     }
                     &.serv8{
-                        background-image: url("../img/services/estetic.jpg");
+                        background-image: url("../img/services/transp.jpg");
                     }
                     &.serv9{
-                        background-image: url("../img/services/estetic.jpg");
+                        background-image: url("../img/services/endosurg.gif");
                     }
                     
                     h6{
@@ -323,6 +319,15 @@ html {
                         border-radius: 20px;
                         background-color: white;
                         padding: 10px 20px;
+                    }
+                    &:hover{
+                        background-size: 110%;
+                        h6{
+                            color: white;
+                            background-color: $color5;
+                            border: 1px solid white;
+                            box-sizing: border-box;
+                        }
                     }
                 }
 

@@ -263,7 +263,7 @@ html body .services .btn:hover {
 }
 
 html body .service {
-  background-color: #9adde7;
+  background-color: #b9eaf0;
 }
 
 html body .service .heading {
@@ -320,19 +320,19 @@ html body .service .serv-item .img.serv5 {
 }
 
 html body .service .serv-item .img.serv6 {
-  background-image: url("../img/services/estetic.jpg");
+  background-image: url("../img/services/reconstruct.png");
 }
 
 html body .service .serv-item .img.serv7 {
-  background-image: url("../img/services/estetic.jpg");
+  background-image: url("../img/services/dental-trauma.jpg");
 }
 
 html body .service .serv-item .img.serv8 {
-  background-image: url("../img/services/estetic.jpg");
+  background-image: url("../img/services/transp.jpg");
 }
 
 html body .service .serv-item .img.serv9 {
-  background-image: url("../img/services/estetic.jpg");
+  background-image: url("../img/services/endosurg.gif");
 }
 
 html body .service .serv-item .img h6 {
@@ -341,6 +341,18 @@ html body .service .serv-item .img h6 {
   border-radius: 20px;
   background-color: white;
   padding: 10px 20px;
+}
+
+html body .service .serv-item .img:hover {
+  background-size: 110%;
+}
+
+html body .service .serv-item .img:hover h6 {
+  color: white;
+  background-color: #54ced4;
+  border: 1px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html body footer {
